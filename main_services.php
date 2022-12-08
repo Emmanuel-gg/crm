@@ -204,8 +204,8 @@ $terminoGasolina = isset($task['finish']);
                                                 <div class="col-sm-auto">
                                                     <div>
                                                         <!-- Id para el funcionamiento del boton de inicio y fin del receso de comida -->
-                                                        <button type="button" class="btn btn-info add-btn" data-bs-toggle="modal" id="start-comida_btn"  data-bs-target="#lunchmodal" <?php if((($terminoTrabajo || !$comenzoTrabajo) && $tipo_usuario === 2) || ($comenzoComida && !$terminoComida)) { echo 'style="display:none"'; }?>><i class=" bx bx-bowl-hot "></i></button>
-                                                        <button type="button" class="btn btn-warning add-btn" data-bs-toggle="modal" id="finish-comida_btn"  data-bs-target="#endlunchmodal"  <?php if((($terminoTrabajo || !$comenzoTrabajo) && $tipo_usuario === 2) ||  (!$comenzoComida) || ($comenzoComida && $terminoComida)) { echo 'style="display:none"'; }?>><i class=" bx bx-bowl-hot "></i></button>
+                                                        <button type="button" class="btn btn-info add-btn" data-bs-toggle="modal" id="start-comida_btn"  data-bs-target="#lunchmodal" <?php if((($terminoTrabajo || !$comenzoTrabajo) && $tipo_usuario == 2) || ($comenzoComida && !$terminoComida)) { echo 'style="display:none"'; }?>><i class=" bx bx-bowl-hot "></i></button>
+                                                        <button type="button" class="btn btn-warning add-btn" data-bs-toggle="modal" id="finish-comida_btn"  data-bs-target="#endlunchmodal"  <?php if((($terminoTrabajo || !$comenzoTrabajo) && $tipo_usuario == 2) ||  (!$comenzoComida) || ($comenzoComida && $terminoComida)) { echo 'style="display:none"'; }?>><i class=" bx bx-bowl-hot "></i></button>
                                                     </div>
                                                 </div>
                                                 <?php if ($tipo_usuario == 2 || $tipo_usuario == 3) {  ?>
